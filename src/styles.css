@@ -20,7 +20,9 @@ background-image: url('../images/img1.jpg');
 }
 
 header {
+    width: 100%;
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
