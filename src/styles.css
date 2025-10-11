@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: sans-serif;
+
+  /* Direct image URL */
+background-image: url('../images/img1.jpg');
+  /* Make it cover entire page */
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+
+  /* Optional: overlay for readability */
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+li {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+li:hover, .log:hover {
+  color: tomato;
+  transition: 0.2s;
+}
+
+.log {
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 20px;
+  height: 800px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+}
+
+.info {
+  flex: 1 1 500px;
+  max-width: 500px;
+
+  padding: 30px;
+  height: 500px;
+  border-radius: 20px;
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.info h3.t1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFD700; /* golden accent */
+}
+
+.info h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.start-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 25px;
+  background-color: #FFCC00;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.start-btn:hover {
+  transform: scale(1.05);
+  background-color: #FFD633;
+}
+
+.preview {
+  flex: 1 1 300px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -200px;
+}
+
+.preview img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: filter 0.5s ease, transform 0.5s ease;
+  cursor: pointer;
+}
+
+
+.preview img:hover {
+  filter: blur(0);
+  transform: scale(1.1);
+}
