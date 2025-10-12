@@ -33,6 +33,7 @@ header {
 .title {
   font-size: 22px;
   font-weight: bold;
+  color: orange;
 }
 
 .nav-right {
@@ -145,4 +146,97 @@ li:hover, .log:hover {
 .preview img:hover {
   filter: blur(0);
   transform: scale(1.1);
+}
+
+.about {
+  background: #0e0e10;
+  color: #f5f5f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  color: orange;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-heading {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.about-text {
+  font-size: 18px;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.section-subtitle {
+  font-size: 22px;
+  color: orange;
+  margin: 40px 0 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1d;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+}
+
+.card h4 {
+  color: orange;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.card p {
+  color: #ddd;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  color: orange;
+  text-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+}
+
+.stat-label {
+  display: block;
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 5px;
 }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guess the Anime Character | Login</title>
+  <link href="playground.css" rel="stylesheet" />
+</head>
+<body>
+  <header id="header">
+    <div class="title">Guess the Anime Character</div>
+
+    <nav class="nav-right">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="play.html">Play</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="#donate">Donate</a></li>
+      </ul>
+      <!-- ✅ Added ID so JS can find it -->
+      <button id="headerLoginBtn" class="log">Log In</button>
+    </nav>
+  </header>
+
+  <section class="login-section" id="logdiv">
+    <h2>Oops! It looks like you haven't signed in yet.</h2>
+
+    <div class="action">
+      <button class="btnlog guest" id="guestBtn">Play as Guest</button>
+      <button id="loginBtn" class="btnlog">Log In</button>
+    </div>
+
+    <div class="note">
+      <p>
+        <strong>Note:</strong> Playing as a guest means your score, stats, and leaderboard position won’t be saved.
+      </p>
+    </div>
+  </section>
+
+  <section class="playground" id="playground" style="display: none;">
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Return</a></li>
+      </ul>
+      <div class="t1">Guess the Anime Character</div>
+    </div>
+  </section>
+
+  <div class="login" id="logindiv" style="display: none;">
+    <h2 class="t2">Login</h2>
+    <form id="loginForm">
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit" class="btn-login">
+        <ion-icon name="log-in-outline"></ion-icon> Login
+      </button>
+    </form>
+
+    <div class="quick">
+      <p>Don't have an account?</p>
+      <a href="#" class="signup-link">Sign up</a>
+    </div>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="playground.js"></script>
+</body>
+</html>
