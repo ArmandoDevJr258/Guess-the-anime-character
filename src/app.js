@@ -1,4 +1,17 @@
 const preview = document.querySelector(".preview");
+ const header = document.getElementById("header");
+  const logSection = document.getElementById("logdiv");
+  const headerLoginBtn = document.getElementById("headerLoginBtn");
+  const guestBtn = document.getElementById("guestBtn");
+  const playgroundDiv = document.getElementById("playground");
+ const loginDiv= document.getElementById("logindiv");
+ const loginBtn=document.getElementById("loginBtn");
+const signupdiv= document.getElementById("signupdiv");
+ loginBtn.addEventListener("click", () => {
+  loginDiv.style.display = "flex"; // show
+});
+  
+
 
 // Your anime images array
 const images = [

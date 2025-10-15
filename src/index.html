@@ -1,109 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess The Anime Character.</title>
-    <link href="styles.css" rel="Stylesheet"/>
-     <link rel="icon" type="image/png" href="../images/img9.jpg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guess The Anime Character</title>
+  <link rel="icon" type="image/png" href="../images/img9.jpg" />
+  <link href="styles.css" rel="StyleSheet"/>
+
+  
 </head>
+
 <body>
-   <header>
-  <div class="title">Guess the Anime Character</div>
+  <header id="header">
+    <div class="title">Guess the Anime Character</div>
 
-  <div class="nav-right">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="play.html">Play</a></li>
-      <li ><a href="#about">About</a></li>
-      <li>Donate</li>
-    </ul>
-    <div class="log">
-        <p style="text-align: center;margin-top: 10px;color: white;">Log In</p>
-            
-        </div>
-  </div>
-</header>
+    <div class="nav-right">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="play.html">Play</a></li>
+        <li><a href="#about">About</a></li>
+        <li>Donate</li>
+      </ul>
+      <div class="log" id="loginBtn">
+        <p >Log In</p>
+      </div>
+    </div>
+  </header>
 
-<section class="hero-section">
-  <div class="info">
-    <h3 class="t1">Can you Guess The Anime Character?</h3>
-     <h2>
-    Can you recognize your favorite anime characters from blurred images? 
-    Prove you're the ultimate otaku 👑 and challenge yourself with the ultimate anime guessing game!
-  </h2>
-  <p>
-    Each round, a mysterious character will appear. Guess their name, discover fun trivia, 
-    and climb the leaderboard! Are you ready to show off your anime mastery?
-  </p>
-    <a href="play.html" class="start-btn">🚀 Start Quiz</a>
-  </div>
-  <div class="preview" i>
-    <img src="../images/img1.jpg" alt="Sample Character" />
-    <img src="../images/e1520a65-3478-41ae-a311-34d366e1cc0d.jpg" alt="Sample Character" />
-    <img src="../images/edd791ec-55c8-4b4e-bcd7-2b6c85ee5bd9.jpg" alt="Sample Character" />
-  </div>
-</section>
-
-<section class="about" id="about">
-  <h3 class="section-title">About</h3>
-
-  <h2 class="about-heading">
-    Guess the anime character by name, silhouette, bio, background story,  
-    and more fun facts... cool, right?
-  </h2>
-
-  <p class="about-text">
-    This anime quiz web game was created to make the anime community more fun, 
-    interactive, and knowledgeable! Enjoy timed, surprise-based, and stylish quizzes 
-    — all made with ❤️ by an anime lover, for anime lovers.
-  </p>
-
-  <div class="gamepreview">
-    <!-- You can later add a short demo video or screenshot here -->
-  </div>
-
-  <h3 class="section-subtitle">Why this game?</h3>
-
-  <div class="cards-container">
-    <div class="card">
-      <h4>Made for You</h4>
+  <section class="hero-section">
+    <div class="info">
+      <h3 class="t1">Can you Guess The Anime Character?</h3>
+      <h2>
+        Can you recognize your favorite anime characters from blurred images? 
+        Prove you're the ultimate otaku 👑 and challenge yourself with the ultimate anime guessing game!
+      </h2>
       <p>
-        This website was built with passion — from one anime fan to another.  
-        It’s all about celebrating what we love most: anime!
+        Each round, a mysterious character will appear. Guess their name, discover fun trivia, 
+        and climb the leaderboard! Are you ready to show off your anime mastery?
       </p>
+      <a href="play.html" class="start-btn">🚀 Start Quiz</a>
     </div>
 
-    <div class="card">
-      <h4>Personalized Experience</h4>
-      <p>
-        Tired of repetitive quizzes? Don’t worry — our platform offers multiple  
-        themed and stylish quiz modes to keep things fresh and exciting.
-      </p>
-    </div>
+    <div class="preview"></div>
+  </section>
 
-  <div class="card">
-  <h4>Constant Updates</h4>
-  <p>
-    New quizzes and characters are added regularly, so there’s always something  
-    fresh to test your otaku knowledge!
-  </p>
+  <footer class="footer">
+    <p>&copy; 2025 Guess the Anime Character. All rights reserved.</p>
+  </footer>
 
-  <div class="stats">
-    <div class="stat">
-      <span class="stat-number">+500</span>
-      <span class="stat-label">Quiz Questions</span>
-    </div>
-    <div class="stat">
-      <span class="stat-number">+25</span>
-      <span class="stat-label">Quiz Themes</span>
+  <!-- LOGIN POPUP -->
+  <div class="login" id="logindiv">
+    <div class="login-box">
+      <h2 class="t2">Login</h2>
+      <form id="loginForm" class="loginform">
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="btn-login">Login</button>
+      </form>
+
+      <div class="quick">
+        <p>Don't have an account?</p>
+        <a href="#" class="signup-link">Sign up</a>
+      </div>
     </div>
   </div>
-</div>
 
+    <!-- signup POPUP -->
+  <div class="login" id="signupdiv">
+    <div class="login-box">
+      <h2 class="t2">Sign Up</h2>
+      <form id="loginForm" class="loginform">
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="btn-login">sugnup</button>
+      </form>
+
+      <div class="quick">
+        <p>Alreday have an account?</p>
+        <a href="#" class="signup-link">Log</a>
+      </div>
+    </div>
   </div>
-</section>
 
-    <script src="app.js"></script>
+  <!-- Firebase App (core SDK) -->
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<!-- Firebase Auth SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+
+  <section class="about" id="about"> <h3 class="section-title">About</h3> <h2 class="about-heading"> Guess the anime character by name, silhouette, bio, background story, and more fun facts... cool, right? </h2> <p class="about-text"> This anime quiz web game was created to make the anime community more fun, interactive, and knowledgeable! Enjoy timed, surprise-based, and stylish quizzes — all made with ❤️ by an anime lover, for anime lovers. </p> <div class="gamepreview"> <!-- You can later add a short demo video or screenshot here --> </div> <h3 class="section-subtitle">Why this game?</h3> <div class="cards-container"> <div class="card"> <h4>Made for You</h4> <p> This website was built with passion — from one anime fan to another. It’s all about celebrating what we love most: anime! </p> </div> <div class="card"> <h4>Personalized Experience</h4> <p> Tired of repetitive quizzes? Don’t worry — our platform offers multiple themed and stylish quiz modes to keep things fresh and exciting. </p> </div> <div class="card"> <h4>Constant Updates</h4> <p> New quizzes and characters are added regularly, so there’s always something fresh to test your otaku knowledge! </p> <div class="stats"> <div class="stat"> <span class="stat-number">+500</span> <span class="stat-label">Quiz Questions</span> </div> <div class="stat"> <span class="stat-number">+25</span> <span class="stat-label">Quiz Themes</span> </div> </div> </div> </div> </section> <footer class="footer"> <p>&copy; 2025 Guess the Anime Character. All rights reserved.</p> </footer> <div class="login" id="logindiv" > <div class="login-box"> <h2 class="t2">Login</h2> <form id="loginForm" class="loginform"> <input type="email" placeholder="Email" required /> <input type="password" placeholder="Password" required /> <button type="submit" class="btn-login"> <ion-icon name="log-in-outline"></ion-icon> Login </button> </form> <div class="quick"> <p>Don't have an account?</p> <a href="#" class="signup-link">Sign up</a> </div> </div> </div>
+  <script>
+    const preview = document.querySelector(".preview");
+    const loginDiv = document.getElementById("logindiv");
+    const loginBtn = document.getElementById("loginBtn");
+
+    loginBtn.addEventListener("click", () => {
+      loginDiv.style.display = "flex";
+    });
+
+    loginDiv.addEventListener("click", (e) => {
+      if (e.target === loginDiv) loginDiv.style.display = "none";
+    });
+
+    const images = [
+      "../images/img1.jpg",
+      "../images/img6.jpg",
+      "../images/img3.jpg",
+      "../images/img4.jpg",
+      "../images/img5.jpg",
+      "../images/img2.jpg",
+      "../images/img7.jpg",
+      "../images/img8.jpg",
+      "../images/img9.jpg",
+      "../images/img10.jpg",
+    ];
+
+    let currentIndex = 0;
+
+    function getThreeImages(startIndex) {
+      const result = [];
+      for (let i = 0; i < 3; i++) {
+        result.push(images[(startIndex + i) % images.length]);
+      }
+      return result;
+    }
+
+    function showImages() {
+      preview.innerHTML = "";
+      const threeImages = getThreeImages(currentIndex);
+      threeImages.forEach((imgSrc, index) => {
+        const img = document.createElement("img");
+        img.src = imgSrc;
+        if (index === 1) {
+          img.style.filter = "blur(0)";
+          img.style.transform = "scale(1.5)";
+          img.style.zIndex = 1;
+        } else {
+          img.style.filter = "blur(5px)";
+          img.style.transform = "scale(1)";
+          img.style.zIndex = 0;
+        }
+        preview.appendChild(img);
+      });
+      currentIndex = (currentIndex + 1) % images.length;
+    }
+
+    showImages();
+    setInterval(showImages, 3000);
+  </script>
 </body>
 </html>

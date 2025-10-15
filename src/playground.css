@@ -91,6 +91,11 @@ li a:hover {
   margin-bottom: 40px;
 }
 
+.t1{
+  font-size: 30px;
+  font-weight: bold;
+  color: orange;
+}
 /* Buttons */
 .action {
   display: flex;
@@ -323,6 +328,48 @@ input:focus {
 .signup-link:hover {
   text-decoration: underline;
 }
+.progress-container {
+  width: 90%;
+  height: 10px;
+  background: #444;
+  border-radius: 5px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #40ff4a, #3aff17);
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  text-align: center;
+  color: green;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.quiz-finished {
+  text-align: center;
+  color: green;
+  margin-top: 50px;
+}
+
+.quiz-finished button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #ff4081;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.quiz-finished button:hover {
+  background: #ff1744;
+}
+
 
 
 /* Responsive */
